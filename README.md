@@ -1,7 +1,5 @@
 # Policing Equity — Unsupervised Learning Case Study
 
-This repository contains a cleaned analysis pipeline for the IU Machine Learning — Unsupervised Learning and Feature Engineering case study, Task 2: Policing Equity.
-
 ## Goal
 
 The goal is to reduce the complexity of a large policing-incident dataset, identify homogeneous groups of incidents, and create visualizations and descriptive cluster summaries that can support interpretation.
