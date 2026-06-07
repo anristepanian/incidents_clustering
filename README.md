@@ -1,4 +1,4 @@
-# Policing Equity — Unsupervised Learning Case Study
+# Policing Incidents Clustering
 
 ## Goal
 
