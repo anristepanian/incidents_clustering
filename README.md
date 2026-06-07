@@ -9,16 +9,7 @@ The goal is to reduce the complexity of a large policing-incident dataset, ident
 The analysis uses the Center for Policing Equity Kaggle dataset:
 
 ```text
-cpe-data/Dept_49-00081/49-00081_Incident-Reports_2012_to_May_2015.csv
-```
-
-## Files
-
-```text
-policing_equity_clean.ipynb      Main cleaned notebook
-policing_equity_pipeline.py      Script version of the same pipeline
-requirements.txt                 Python dependencies
-README_policing_equity.md        This file
+TBA
 ```
 
 ## Method summary
@@ -34,11 +25,6 @@ README_policing_equity.md        This file
 9. Use MiniBatch K-Means for clustering.
 10. Export cluster summaries and report-ready figures.
 
-## Why some columns are excluded
-
-- `INCIDENT_UNIQUE_IDENTIFIER` is excluded from modelling because it only identifies records and does not describe incident similarity.
-- `LOCATION_FULL_STREET_ADDRESS_OR_INTERSECTION` is excluded from modelling because it has very high cardinality and can dominate the encoded feature space. Geographic information is still represented through district, longitude, latitude, and rounded coordinate bins.
-
 ## How to run
 
 Install dependencies:
@@ -51,12 +37,6 @@ Run the notebook:
 
 ```bash
 jupyter notebook policing_equity_clean.ipynb
-```
-
-Or run the script:
-
-```bash
-python policing_equity_pipeline.py
 ```
 
 ## Outputs
@@ -90,4 +70,4 @@ outputs/figures/disposition_by_cluster.png
 
 ## Important limitation
 
-The clusters show recurring patterns in the incident data. They do not by themselves prove causality, discrimination, or individual-level bias. Any equity claim should be made cautiously and would require additional statistical analysis and contextual data.
+TBA
