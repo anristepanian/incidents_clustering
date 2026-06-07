@@ -12,8 +12,6 @@ The analysis uses the Center for Policing Equity Kaggle dataset:
 cpe-data/Dept_49-00081/49-00081_Incident-Reports_2012_to_May_2015.csv
 ```
 
-Place the Kaggle data folder in the project root so the path above exists, or change `DATA_PATH` in the notebook/script.
-
 ## Files
 
 ```text
