@@ -1,4 +1,4 @@
-# Policing Incidents Clustering
+# Police Incidents Clustering
 
 ## Goal
 
