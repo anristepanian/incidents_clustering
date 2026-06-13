@@ -1,0 +1,12 @@
+column,dtype,missing_share,unique_values,column_group
+INCIDENT_DATE,str,0.0,1379,date_time
+INCIDENT_DAY,str,0.0,8,date_time
+INCIDENT_TIME,str,0.0,1440,date_time
+LOCATION_DISTRICT,str,0.0,11,geographic
+LOCATION_FULL_STREET_ADDRESS_OR_INTERSECTION,str,0.0,19777,geographic
+LOCATION_LATITUDE,str,0.0,25244,geographic
+LOCATION_LONGITUDE,str,0.0,24980,geographic
+INCIDENT_UNIQUE_IDENTIFIER,str,0.0,314745,id_like
+INCIDENT_REASON,str,0.0,40,incident_type
+INCIDENT_REASON_DESCRIPTION,str,0.0,833,incident_type
+DISPOSITION,str,0.0,18,outcome
