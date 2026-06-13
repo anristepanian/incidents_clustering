@@ -1,8 +1,7 @@
-# Data and generated outputs
+# Data
 cpe-data/
 archive/
-outputs/
-*.csv
+dump/
 
 # Python
 __pycache__/
@@ -13,5 +12,3 @@ __pycache__/
 .venv/
 venv/
 .env
-
-dump/
