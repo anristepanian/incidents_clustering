@@ -2,6 +2,7 @@
 cpe-data/
 archive/
 dump/
+db/
 
 # Python
 __pycache__/
@@ -12,3 +13,4 @@ __pycache__/
 .venv/
 venv/
 .env
+.idea/
