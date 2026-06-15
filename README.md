@@ -12,7 +12,8 @@ The analysis uses the Center for Policing Equity Kaggle dataset:
 
 https://www.kaggle.com/datasets/center-for-policing-equity/data-science-for-good
 
-```text
+## Description
+
 This repository follows a rigorous, step-by-step data engineering and modeling pipeline:
 
 1. **Data Discovery & Ingestion (`db_explore.ipynb`):** Programmatically parsed raw multi-department Kaggle data to isolate a high-fidelity, complete target tracking baseline under directory `Dept_49-00081`.
@@ -21,7 +22,6 @@ This repository follows a rigorous, step-by-step data engineering and modeling p
    * Encoded categorical attributes (`INCIDENT_REASON`, `DISPOSITION`) into memory-efficient **Sparse One-Hot Matrices**.
 3. **Dimensionality Reduction (`main.ipynb`):** Projected the high-dimensional sparse feature space down to 50 continuous components via **Truncated SVD**, bypassing the curse of dimensionality while preserving structural variance.
 4. **Empirical Clustering Optimization (`main.ipynb`):** Ran an iterative hyperparameter tuning loop ($K = 2$ to $10$) evaluating **Inertia**, **Silhouette Scores**, and the **Davies-Bouldin Index** to mathematically prove **4 clusters** as the optimal configuration.
-```
 
 ## Method summary
 
