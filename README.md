@@ -105,10 +105,10 @@ outputs/figures/disposition_by_cluster.png
 
 ## Conclusion
 
-- Cluster 0: Administrative & Low-Friction Controls - Routine premise checks and minor incidents resolved quickly via scene dismissals or verbal warnings
-- Cluster 1: High-Severity Interventions - Severe criminal violations and warrant executions resulting primarily in formal physical bookings and arrests
-- Cluster 2: Routine Regulatory & Traffic Enforcement - Highly transactional, vehicle-code-driven stops resolved almost exclusively via field citations or summonses
-- Cluster 3: Crisis & Medical Case Management - Public health incidents (mental health crises, overdoses, welfare checks) requiring psychiatric holds and medical handoffs rather than criminal processing
+- **Cluster 0**: Administrative & Low-Friction Controls - Routine premise checks and minor incidents resolved quickly via scene dismissals or verbal warnings
+- **Cluster 1**: High-Severity Interventions - Severe criminal violations and warrant executions resulting primarily in formal physical bookings and arrests
+- **Cluster 2**: Routine Regulatory & Traffic Enforcement - Highly transactional, vehicle-code-driven stops resolved almost exclusively via field citations or summonses
+- **Cluster 3**: Crisis & Medical Case Management - Public health incidents (mental health crises, overdoses, welfare checks) requiring psychiatric holds and medical handoffs rather than criminal processing
 
 ## Authors
 
