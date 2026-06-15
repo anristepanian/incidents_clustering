@@ -89,12 +89,18 @@ outputs/figures/disposition_by_cluster.png
 
 ## Key Visualizations
 
-- elobow_plot.png: Demonstrates a distinct inflection point flattening out right at K=4
+elobow_plot.png: Demonstrates a distinct inflection point flattening out right at K=4
+
 ![Elbow PLot](outputs/figures/elbow_plot.png)
-- silhouette_by_k.png & davies_bouldin_by_k.png: Confirms optimal cluster cohesion and maximum separation boundaries at 4 clusters
+
+silhouette_by_k.png & davies_bouldin_by_k.png: Confirms optimal cluster cohesion and maximum separation boundaries at 4 clusters
+
 ![Silhouette Score](outputs/figures/silhouette_by_k.png)
+
 ![Davies Bouldin Score](outputs/figures/davies_bouldin_by_k.png)
-- geographic_cluster_distribution.png: Maps out the clear spatial polarization of traffic enforcement along highways versus crisis management clustered in dense urban centers
+
+geographic_cluster_distribution.png: Maps out the clear spatial polarization of traffic enforcement along highways versus crisis management clustered in dense urban centers
+
 ![Geographic Cluster Distribution](outputs/figures/geographic_cluster_distribution.png)
 
 ## Authors
