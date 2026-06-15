@@ -110,6 +110,10 @@ outputs/figures/disposition_by_cluster.png
 - **Cluster 2**: Routine Regulatory & Traffic Enforcement - Highly transactional, vehicle-code-driven stops resolved almost exclusively via field citations or summonses
 - **Cluster 3**: Crisis & Medical Case Management - Public health incidents (mental health crises, overdoses, welfare checks) requiring psychiatric holds and medical handoffs rather than criminal processing
 
+## License
+
+[MIT License](LICENSE)
+
 ## Authors
 
 The project was done by [Anri :sunglasses:](https://github.com/anristepanian)
