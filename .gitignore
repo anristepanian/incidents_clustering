@@ -14,3 +14,10 @@ __pycache__/
 venv/
 .env
 .idea/
+
+# Files
+49-00081_Incident-Reports_2012_to_May_2015.csv
+outputs/policing_equity_clustered.csv
+outputs/policing_equity_features.csv
+outputs/svd_2d_coordinates.csv
+outputs/svd_components.csv
