@@ -1,4 +1,4 @@
-component,explained_variance_ratio,cumulative_explained_variance
+component,explained_var_ratio,cumulative_explained_var
 1,0.19987471872487633,0.19987471872487633
 2,0.1548644128905225,0.35473913161539883
 3,0.14958878570475148,0.5043279173201503
