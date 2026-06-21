@@ -114,9 +114,8 @@ Or open interactively:
 jupyter notebook main.ipynb
 ```
 
-> **Note:** `policing_equity_clustered.csv` and the raw dataset are not pushed
-> to this repository due to file size. Both are generated locally when you run
-> the notebook.
+> [!NOTE]
+> `policing_equity_clustered.csv` and the raw dataset are not pushed to this repository due to file size. Both are generated locally when you run the notebook.
 
 ## Outputs
 
@@ -138,7 +137,7 @@ outputs/
 └── figures/
 ```
 
-## Key Visualisations
+## Key Visualizations
 
 ### Cluster selection
 
@@ -203,7 +202,7 @@ community.
 **Equity note:** The cluster composition varies across districts (see
 `equity_cluster_share_by_district.png`). Districts where Cluster 1 or Cluster 3
 is disproportionately concentrated relative to the city-wide average may warrant
-further investigation. These findings are descriptive — causal conclusions
+further investigation. These findings are descriptive and causal conclusions
 regarding racial or socioeconomic disparities require demographic data not
 present in this dataset.
 
