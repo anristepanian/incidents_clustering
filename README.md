@@ -9,9 +9,11 @@ audit public safety equity across districts.
 
 ## Goal
 
-Reduce the complexity of a large policing-incident dataset, identify homogeneous
-groups of incidents, and produce visualizations and descriptive cluster summaries
-that support equity-focused interpretation — even by non-technical stakeholders.
+The goal is to get a better overview over policing activities in the community which should, ultimately, lift the political discussion to a more informed level.
+Goal in this project is to reduce the  complexity of the dataset which is, at first, hard to overlook and to provide visualizations which capture the main characteristics of the whole dataset.
+For this purpose, different techniques were used for dimensionality reduction.
+Provided insights into preferably homogeneous clusters of policing activities and visualizations, which allow to interpret these clusters.
+Finally, provided descriptive statistics about each group along with the number of incidents per cluster.
 
 ## Dataset
 
