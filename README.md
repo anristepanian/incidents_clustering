@@ -271,4 +271,4 @@ present in this dataset.
 
 ## Authors
 
-[Anri :sunglasses:](https://github.com/anristepanian)
+[Anri :cowboy_hat_face:](https://github.com/anristepanian)
