@@ -41,7 +41,7 @@ data quality, and form hypotheses about patterns clustering might reveal:
 - Dropped uninformative identifiers and high-cardinality street addresses to
   eliminate noise that would produce near-unique one-hot encodings.
 - Preserved exact coordinate vectors (`LOCATION_LONGITUDE`, `LOCATION_LATITUDE`)
-  plus coarsened geographic bins (0.01° ≈ 1 km) for neighbourhood-level signal.
+  plus coarsened geographic bins (0.01° ≈ 1 km) for neighborhood-level signal.
 - Extracted temporal features: year, month, day of week, continuous time in
   minutes, binary weekend flag, and a four-period time-of-day label
   (night / morning / afternoon / evening).
@@ -116,6 +116,65 @@ jupyter notebook main.ipynb
 
 > [!NOTE]
 > `policing_equity_clustered.csv` and the raw dataset are not pushed to this repository due to file size. Both are generated locally when you run the notebook.
+
+## How to test
+
+The test suite lives in `tests/` and is built with **pytest**. All functions from `main.ipynb` are extracted into 
+`pipeline.py`, which both the notebook and the tests import from.
+
+Install test dependencies:
+
+```bash
+pip install -r requirements-test.txt
+```
+
+### Running the tests
+
+```bash
+# Run everything (fast tests only, ~2 s)
+pytest tests/
+
+# Run with the real dataset to unlock cluster quality tests
+DATA_PATH=49-00081_Incident-Reports_2012_to_May_2015.csv pytest tests/
+
+# Run a single file
+pytest tests/test_helpers.py
+pytest tests/test_cluster_quality.py
+
+# Stop on first failure
+pytest tests/ -x
+
+# See coverage
+pytest tests/ --cov=pipeline --cov-report=term-missing
+```
+
+### What is tested
+
+The suite contains **102 tests** across three files:
+
+| File | What it covers                                                                                                                                                                                                    | Needs CSV? |
+|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| `test_helpers.py` | Every pure helper function (`clean_text`, `minutes_to_time`, `top_values`, `sample_df`, etc.), edge cases, null handling, output format                                                                           | No |
+| `test_pipeline.py` | Full transformation chain: header row removal, temporal feature ranges, weekend flag logic, geographic bounds, text normalisation, sparse matrix output, StandardScaler zeroing, SVD shape and monotonic variance | No |
+| `test_cluster_quality.py` | Whether the clusters are actually meaningful - split into three tiers (see below)                                                                                                                                 | Tier 3 only |
+
+### Cluster quality tiers
+
+**Tier 1: Structural sanity** *(always run, instant)*  
+Labels in valid range, exactly k clusters produced, no empty cluster, full reproducibility with the same random seed.
+
+**Tier 2: Algorithm correctness** *(always run, synthetic data)*  
+Creates `make_blobs` with 4 clearly separated groups and asserts the pipeline recovers them: silhouette > 0.7, Davies-Bouldin < 0.5, inertia strictly decreasing as k grows. If this fails, the algorithm itself is broken, not just the data.
+
+**Tier 3: Real data quality** *(skipped without CSV)*  
+Runs on 10,000 records from the actual dataset and asserts:
+- Silhouette > 0 (clusters are better than random)
+- Davies-Bouldin < 3.0 (clusters are not heavily overlapping)
+- No cluster captures > 85% of incidents (not a degenerate solution)
+- No cluster captures < 1% of incidents (not capturing noise)
+- ANOVA on time of day across clusters: p < 0.01
+- Geographic centroid spread ≥ 500 m across clusters
+- Chi-squared on incident type, disposition, and district: p < 0.001
 
 ## Outputs
 
@@ -212,4 +271,4 @@ present in this dataset.
 
 ## Authors
 
-[Anri :sunglasses:](https://github.com/anristepanian)
+[Anri :cowboy_hat_face:](https://github.com/anristepanian)

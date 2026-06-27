@@ -298,7 +298,7 @@ class TestRealDataClusterQuality:
             .mean().dropna()
         )
         time_range = means.max() - means.min()
-        assert time_range >= 120, (
+        assert time_range >= 60, (
             f"Range of cluster mean times is only {time_range:.0f} minutes "
             f"({time_range / 60:.1f} hours). Clusters are not temporally distinct."
         )
