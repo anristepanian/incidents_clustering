@@ -7,13 +7,16 @@ four distinct operational signatures within ~315k incident records to help
 municipal leaders understand policing patterns, optimize resource allocation, and
 audit public safety equity across districts.
 
-## Goal
+## Legend & Goals
 
-The goal is to get a better overview over policing activities in the community which should, ultimately, lift the political discussion to a more informed level.
-Goal in this project is to reduce the  complexity of the dataset which is, at first, hard to overlook and to provide visualizations which capture the main characteristics of the whole dataset.
-For this purpose, different techniques were used for dimensionality reduction.
-Provided insights into preferably homogeneous clusters of policing activities and visualizations, which allow to interpret these clusters.
-Finally, provided descriptive statistics about each group along with the number of incidents per cluster.
+ There has been a lot of concerns about policing equity in the local community. Driven by the political discourse, the
+ local municipal administration has decided to quantitatively investigate this issue. For a couple of years, there has
+ been a standardized data collection process with respect to policing activities in place. Until the present day, the
+ dataset has grown to a considerable size and overlooking patterns in the data has become an intricate task.<br><br>
+ In the first step, the goal was to investigate the provided dataset towards homogeneous categories of similar policing
+ incidents. It was found that the geographic information is contained in the dataset and might be useful for the
+ investigation of patterns within the data. The goal was to get a better overview over policing activities in the
+ community which had to, ultimately, lift the political discussion to a more informed level.
 
 ## Dataset
 
@@ -21,10 +24,14 @@ Data Science for Good (Kaggle):
 
 https://www.kaggle.com/datasets/center-for-policing-equity/data-science-for-good
 
-The analysis targets the high-fidelity incident report file under `Dept_49-00081`,
+The analysis targets the high-fidelity incident report file under `49-00081_Incident-Reports_2012_to_May_2015.csv`,
 selected for its completeness and temporal coverage (2012 - mid-2015).
 
 ## Pipeline
+
+In this use case, the most important was to reduce the complexity of the dataset which is, at first, hard to overlook and to provide visualizations which capture the main characteristics of the whole dataset.
+For this purpose, different techniques were considered for dimensionality reduction. Also, there were provided insights into preferably homogeneous clusters of policing activities and visualizations, which allowed to interpret these clusters.
+Finally, descriptive statistics about each group along with the number of incidents per cluster were provided.
 
 ### 1. Exploratory Data Analysis (`main.ipynb`)
 
