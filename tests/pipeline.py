@@ -1,10 +1,4 @@
-"""
-All reusable functions extracted from main.ipynb.
-Both the notebook and the test suite import from here.
-
-Usage in notebook:
-    from pipeline import *
-"""
+from pipeline import *
 
 from __future__ import annotations
 
