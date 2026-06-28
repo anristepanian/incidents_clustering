@@ -1,6 +1,6 @@
-from pipeline import *
-
 from __future__ import annotations
+
+from pipeline import *
 
 from typing import Iterable
 
